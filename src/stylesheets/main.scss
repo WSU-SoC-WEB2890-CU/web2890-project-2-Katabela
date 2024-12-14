@@ -1,3 +1,317 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #851111;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .nav-item {
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: rgb(67, 5, 5);
+}
+
+.active .nav-link {
+  color: rgb(67, 5, 5);
+}
+
+// HERO
+
+.main {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  background-color: black;
+}
+
+.main-logo {
+  height: 200px;
+  width: 600px;
+  padding: 2em;
+  background-color: black;
+  position: relative;
+}
+
+.logo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  height: 60vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 60vh;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url("../images/team1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../images/team2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../images/team3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item .mask {
+  position: absolute; /* Position the mask absolutely within the carousel item */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item .text-white {
+  z-index: 1;
+  max-width: 60vw;
+}
+
+//What We Offer
+.what-we-offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0 80px 0;
+  background-color: black;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.what-we-offer h1 {
+  padding: 40px;
+}
+
+.programs {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-color: #851111;
+  color: white;
+  text-align: center;
+  align-content: center;
+  transition: transform 0.2s;
+}
+
+.programs:hover {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+
+//Footer
+
+.footerbg {
+  margin: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(98, 69, 69, 0) 100%);
+}
+
+.is_footer {
+  padding: 120px 0 70px 10px;
+  margin: 0;
+  width: 100vw;
+  color: whitesmoke;
+}
+
+.is_footer h5 {
+  font-size: 25px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #bb3c3c;
+}
+
+.nav-item {
+  font-weight: 300px;
+}
+
+.copyright {
+  background-color: #851111;
+  color: white;
+  margin: 0;
+}
+
+// OTHER PAGES //
+.hero-2 {
+  margin-top: 40px;
+}
+
+.jumbotron {
+  height: 40vh;
+}
+
+.cheer {
+  background-image: url(../images/team2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron .container {
+  background: rgb(255, 255, 255, 0.92);
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px;
+  width: 60vw;
+  //   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.page-text {
+  padding: 4em 6em 4em 6em;
+}
+
+.levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.levels .container {
+  //   width: 60vw;
+  padding: 30px;
+}
+
+.levels-item {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Dance page
+
+.dance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.dance-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s;
+}
+
+.dance-img:hover {
+  transform: scale(1.2);
+  border: 5px solid white;
+}
+
+.dance1 {
+  background-image: url(../images/dance1.png);
+}
+
+.dance2 {
+  background-image: url(../images/dance2.png);
+}
+
+.dance3 {
+  background-image: url(../images/dance3.png);
+}
+
+.dance4 {
+  background-image: url(../images/dance4.png);
+}
+
+// CONTACT
+
+.contact {
+  margin-top: 40px;
+}
+
+.svg {
+  color: #851111;
+}
+
+.form-contact .form {
+  background-color: #851111;
+  color: white;
+}
+
+// calendar
+
+.calendar {
+  margin-top: 50px;
+}
